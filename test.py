@@ -1,3 +1,3 @@
-from tomy.salt import userslug
+from tomy.salt import make_salt
 
-print(userslug())
+print(make_salt(2))

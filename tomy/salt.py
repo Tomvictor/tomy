@@ -17,16 +17,16 @@ def small_saltizer():
     #print(salt)
     return salt
 
-def get_otp_pin():
+def otp():
     rand_word = str(random.random())
     rand_word = rand_word.encode('utf8')
     salt = hashlib.sha1(rand_word).hexdigest()[:6]
     #print(salt)
     return salt
 
-def userslug():
+def saltgen(len):
     rand_word = str(random.random())
     rand_word = rand_word.encode('utf8')
-    salt = hashlib.sha1(rand_word).hexdigest()[:10]
+    salt = hashlib.sha1(rand_word).hexdigest()[:len]
     #print(salt)
     return salt.upper()
